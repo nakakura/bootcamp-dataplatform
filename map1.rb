@@ -8,9 +8,9 @@ while line = STDIN.gets
     data = json["data"]
     tweet = data["text"]
     if tweet.to_s.include?("sleep") then
-      sleep(tweet)
+      puts tweet
     elsif tweet.to_s.include?("寝") then
-      sleep(tweet)
+      puts tweet
     elsif tweet.to_s.include?("眠") then
       puts tweet
     elsif tweet.to_s.include?("布団") then
